@@ -4,8 +4,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Safe Space Nurses · York University</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<title>Safe Space Nurses | York University</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -37,7 +37,7 @@ body{font-family:‘Jost’,sans-serif;background:var(–cream);color:var(–tex
 ::-webkit-scrollbar-track{background:var(–cream)}
 ::-webkit-scrollbar-thumb{background:var(–mauve-light);border-radius:3px}
 
-/* ── CRISIS BAR ─────────────────────────── */
+/* – CRISIS BAR ————————— */
 #crisis-bar{
 background:linear-gradient(90deg,var(–mauve-deep),var(–rose));
 color:#fff;text-align:center;padding:.6rem 1.5rem;
@@ -45,13 +45,13 @@ font-size:.82rem;font-weight:500;letter-spacing:.01em;position:relative;z-index:
 }
 #crisis-bar a{color:#fff;font-weight:700;text-decoration:underline}
 
-/* ── NAV ────────────────────────────────── */
+/* – NAV ––––––––––––––––– */
 nav{
 position:sticky;top:0;z-index:150;
 display:flex;align-items:center;justify-content:space-between;
 padding:1rem 3rem;
 background:rgba(253,248,242,0.93);
-backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);
 border-bottom:1px solid var(–border);
 transition:padding .3s,box-shadow .3s;
 }
@@ -93,8 +93,8 @@ background:var(–mauve-deep);border-radius:2px;transition:all .3s;
 .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
 
 .mobile-menu{
-display:none;position:fixed;inset:0;
-background:rgba(253,248,242,0.98);backdrop-filter:blur(20px);
+display:none;position:fixed;top:0;right:0;bottom:0;left:0;
+background:rgba(253,248,242,0.98);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
 z-index:140;flex-direction:column;align-items:center;justify-content:center;
 gap:2.4rem;opacity:0;pointer-events:none;transition:opacity .3s;
 }
@@ -109,7 +109,7 @@ position:absolute;top:1.5rem;right:1.5rem;
 font-size:1.4rem;cursor:pointer;background:none;border:none;color:var(–text-mid);
 }
 
-/* ── REVEAL ANIMATION ───────────────────── */
+/* – REVEAL ANIMATION ——————— */
 .reveal{opacity:0;transform:translateY(32px);transition:opacity .75s ease,transform .75s ease}
 .reveal.visible{opacity:1;transform:none}
 .reveal-delay-1{transition-delay:.1s}
@@ -121,13 +121,13 @@ font-size:1.4rem;cursor:pointer;background:none;border:none;color:var(–text-mi
 .reveal-right{opacity:0;transform:translateX(30px);transition:opacity .75s ease,transform .75s ease}
 .reveal-right.visible{opacity:1;transform:none}
 
-/* ── HERO ───────────────────────────────── */
+/* – HERO ——————————— */
 #home{
 min-height:100vh;display:flex;align-items:center;
 position:relative;overflow:hidden;padding:6rem 3rem 4rem;
 }
 .hero-bg{
-position:absolute;inset:0;pointer-events:none;
+position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none;
 background:
 radial-gradient(ellipse 60% 70% at 78% 25%,rgba(240,196,178,.38) 0%,transparent 68%),
 radial-gradient(ellipse 50% 55% at 18% 82%,rgba(196,217,197,.32) 0%,transparent 65%),
@@ -147,7 +147,7 @@ padding:.35rem 1rem;border-radius:999px;margin-bottom:1.8rem;
 }
 .hero-title{
 font-family:‘Cormorant Garamond’,serif;
-font-size:clamp(3rem,6vw,5rem);font-weight:400;line-height:1.08;
+font-size:3rem;font-size:clamp(3rem,6vw,5rem);font-weight:400;line-height:1.08;
 color:var(–text);margin-bottom:1.5rem;
 }
 .hero-title em{font-style:italic;color:var(–mauve)}
@@ -184,7 +184,7 @@ background:rgba(255,255,255,.7);border:1px solid var(–sand);
 padding:.28rem .75rem;border-radius:999px;backdrop-filter:blur(4px);
 }
 
-/* ── SHARED ─────────────────────────────── */
+/* – SHARED —————————–– */
 section{padding:6rem 3rem}
 .section-label{
 font-size:.7rem;font-weight:600;letter-spacing:.16em;
@@ -192,14 +192,14 @@ text-transform:uppercase;color:var(–rose);margin-bottom:.5rem;
 }
 .section-title{
 font-family:‘Cormorant Garamond’,serif;
-font-size:clamp(2rem,3.5vw,3rem);font-weight:400;
+font-size:2rem;font-size:clamp(2rem,3.5vw,3rem);font-weight:400;
 line-height:1.15;color:var(–text);margin-bottom:1rem;
 }
 .section-title em{font-style:italic;color:var(–mauve)}
 .section-body{font-size:1rem;line-height:1.8;color:var(–text-mid);max-width:580px;font-weight:300}
 .divider{width:40px;height:2.5px;background:var(–blush);border-radius:2px;margin-bottom:1.5rem}
 
-/* ── ABOUT ──────────────────────────────── */
+/* – ABOUT –––––––––––––––– */
 #about{background:var(–warm)}
 .about-grid{
 display:grid;grid-template-columns:1fr 1fr;
@@ -224,7 +224,7 @@ border:1px solid var(–border);border-radius:14px;padding:1.2rem 1.4rem;
 .research-tag-title{font-weight:600;font-size:.86rem;color:var(–mauve-deep);margin-bottom:.4rem}
 .research-tag-body{font-size:.82rem;color:var(–text-mid);line-height:1.65}
 
-/* ── DAILY TIP ──────────────────────────── */
+/* – DAILY TIP –––––––––––––– */
 #tip{background:var(–cream);padding:0 3rem}
 .tip-wrap{
 max-width:900px;margin:0 auto;
@@ -251,7 +251,7 @@ cursor:pointer;transition:all .2s;font-family:‘Jost’,sans-serif;
 }
 .tip-btn:hover{border-color:var(–mauve-light);color:var(–mauve-deep)}
 
-/* ── MOOD CHECK-IN ──────────────────────── */
+/* – MOOD CHECK-IN ———————— */
 #checkin{
 background:linear-gradient(160deg,var(–cream) 0%,rgba(240,196,178,.18) 100%);
 }
@@ -292,7 +292,7 @@ display:flex;gap:.6rem;align-items:flex-start;line-height:1.5;
 }
 .mood-tips li::before{content:‘✦’;color:var(–rose);flex-shrink:0;font-size:.7rem;margin-top:.18rem}
 
-/* ── BREATHING ──────────────────────────── */
+/* – BREATHING –––––––––––––– */
 #breathing{background:var(–warm)}
 .breathing-inner{max-width:680px;margin:0 auto;text-align:center}
 
@@ -342,7 +342,7 @@ font-weight:400;color:var(–mauve-deep);line-height:1;
 .cycles-label{font-size:.82rem;color:var(–text-soft)}
 .cycles-label strong{color:var(–mauve-deep)}
 
-/* ── EVENTS ─────────────────────────────── */
+/* – EVENTS —————————–– */
 #events{background:var(–cream)}
 .events-inner{max-width:1000px;margin:0 auto}
 .events-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:2.5rem}
@@ -392,7 +392,7 @@ font-size:.86rem;color:var(–text-mid);line-height:1.7;
 }
 .events-note a{color:var(–mauve)}
 
-/* ── RESOURCES ──────────────────────────── */
+/* – RESOURCES –––––––––––––– */
 #resources{background:var(–warm)}
 .res-inner{max-width:1100px;margin:0 auto}
 .res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:2.5rem}
@@ -419,7 +419,7 @@ display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-sh
 .res-list a{color:var(–mauve);text-decoration:none;font-weight:500}
 .res-list a:hover{text-decoration:underline}
 
-/* ── GROUNDING ──────────────────────────── */
+/* – GROUNDING –––––––––––––– */
 #grounding{
 background:linear-gradient(160deg,var(–warm) 0%,rgba(196,217,197,.22) 100%);
 padding:5rem 3rem;
@@ -450,7 +450,7 @@ color:var(–sage);background:rgba(125,158,128,.1);
 padding:.28rem .8rem;border-radius:999px;display:inline-block;
 }
 
-/* ── TEAM ───────────────────────────────── */
+/* – TEAM ——————————— */
 #team{background:var(–warm)}
 .team-inner{max-width:1100px;margin:0 auto}
 .team-grid{
@@ -482,8 +482,8 @@ font-family:‘Cormorant Garamond’,serif;font-size:1.5rem;font-weight:600;colo
 
 /* team modal */
 .modal-overlay{
-position:fixed;inset:0;background:rgba(46,36,32,.42);
-backdrop-filter:blur(7px);z-index:300;
+position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(46,36,32,.42);
+-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);z-index:300;
 display:flex;align-items:center;justify-content:center;padding:1.5rem;
 opacity:0;pointer-events:none;transition:opacity .3s;
 }
@@ -521,7 +521,7 @@ font-size:.86rem;color:var(–text-mid);line-height:1.7;
 }
 .team-note a{color:var(–mauve)}
 
-/* ── CONTACT ────────────────────────────── */
+/* – CONTACT —————————— */
 #contact{
 background:linear-gradient(160deg,var(–cream) 0%,rgba(240,196,178,.2) 100%);
 }
@@ -541,7 +541,7 @@ font-size:.8rem;color:var(–text-soft);line-height:1.7;
 background:rgba(255,255,255,.65);border-radius:12px;padding:1rem 1.3rem;text-align:left;
 }
 
-/* ── FOOTER ─────────────────────────────── */
+/* – FOOTER —————————–– */
 footer{
 background:var(–text);color:rgba(255,255,255,.42);
 text-align:center;padding:2rem 3rem;font-size:.8rem;line-height:1.85;
@@ -562,7 +562,7 @@ opacity:0;pointer-events:none;transition:opacity .3s,transform .2s;z-index:100;
 #btt.show{opacity:1;pointer-events:all}
 #btt:hover{transform:translateY(-3px)}
 
-/* ── RESPONSIVE ─────────────────────────── */
+/* – RESPONSIVE ————————— */
 @media(max-width:900px){.about-grid{grid-template-columns:1fr}}
 @media(max-width:680px){
 nav{padding:1rem 1.5rem}
@@ -586,7 +586,7 @@ section,#grounding{padding:4rem 1.5rem}
 <!-- CRISIS BAR -->
 
 <div id="crisis-bar">
-🆘 In crisis? Call or text <a href="tel:988">9-8-8</a> (Canada, 24/7) &nbsp;·&nbsp; <a href="tel:18669255454">Good2Talk: 1-866-925-5454</a>
+🆘 In crisis? Call or text <a href="tel:988">9-8-8</a> (Canada, 24/7) &nbsp;|&nbsp; <a href="tel:18669255454">Good2Talk: 1-866-925-5454</a>
 </div>
 
 <!-- NAV -->
@@ -625,12 +625,12 @@ section,#grounding{padding:4rem 1.5rem}
 <section id="home">
 <div class="hero-bg"></div>
 <div class="hero-content">
-<div class="hero-eyebrow reveal">✦ York University · School of Nursing</div>
+<div class="hero-eyebrow reveal">✦ York University | School of Nursing</div>
 <h1 class="hero-title reveal reveal-delay-1">
 A <em>safe space</em><br>for nursing students<br><strong>to breathe & belong.</strong>
 </h1>
 <p class="hero-body reveal reveal-delay-2">
-Safe Space Nurses is a student-led mental health and well-being initiative in the York University School of Nursing. We exist to support you — through peer connection, evidence-based tools, and a community that truly gets it.
+Safe Space Nurses is a student-led mental health and well-being initiative in the York University School of Nursing. We exist to support you, through peer connection, evidence-based tools, and a community that truly gets it.
 </p>
 <div class="hero-btns reveal reveal-delay-3">
 <a href="#checkin" class="btn-primary">How are you feeling? →</a>
@@ -652,15 +652,15 @@ Safe Space Nurses is a student-led mental health and well-being initiative in th
 <div class="reveal-left">
 <div class="section-label">Who We Are</div>
 <div class="divider"></div>
-<h2 class="section-title">More than a club —<br><em>a community.</em></h2>
+<h2 class="section-title">More than a club -<br><em>a community.</em></h2>
 <p class="section-body" style="margin-bottom:1.3rem">
-Nursing programs are intense. Between clinical placements, academic demands, and the emotional weight of caring for others, it's easy to feel overwhelmed — or alone. Safe Space Nurses was created by nursing students, for nursing students.
+Nursing programs are intense. Between clinical placements, academic demands, and the emotional weight of caring for others, it's easy to feel overwhelmed, or alone. Safe Space Nurses was created by nursing students, for nursing students.
 </p>
 <p class="section-body">
 Every SSN event is grounded in emotion-focused coping theory and evidence-based approaches to mental health. This site is a resource hub for our community and any nursing student seeking support.
 </p>
 <div class="research-tag">
-<div class="research-tag-title">📋 Ongoing Research Study — Pending Ethics Approval</div>
+<div class="research-tag-title">📋 Ongoing Research Study, Pending Ethics Approval</div>
 <div class="research-tag-body">Safe Space Nurses is conducting a pilot mixed-methods study assessing how peer-led events affect perceived stress, sense of belonging, and early burnout markers in undergraduate nursing students at York University.</div>
 </div>
 </div>
@@ -668,7 +668,7 @@ Every SSN event is grounded in emotion-focused coping theory and evidence-based 
 <div class="about-feat">
 <div class="af-icon">🚶‍♀️</div>
 <div><div class="af-title">Wellness Walks & Stretch Breaks</div>
-<div class="af-body">Movement-based resets between demanding clinical and academic blocks — shown to reduce cortisol and restore focus.</div></div>
+<div class="af-body">Movement-based resets between demanding clinical and academic blocks, shown to reduce cortisol and restore focus.</div></div>
 </div>
 <div class="about-feat">
 <div class="af-icon">💬</div>
@@ -712,7 +712,7 @@ Every SSN event is grounded in emotion-focused coping theory and evidence-based 
 <div class="section-label reveal" style="text-align:center">Interactive Check-In</div>
 <div class="divider reveal" style="margin:0 auto 1rem"></div>
 <h2 class="section-title reveal" style="text-align:center">How are you feeling <em>right now?</em></h2>
-<p class="section-body reveal" style="margin:0 auto 0;text-align:center">Select the emoji that fits. No judgment — just a moment to check in with yourself.</p>
+<p class="section-body reveal" style="margin:0 auto 0;text-align:center">Select the emoji that fits. No judgment, just a moment to check in with yourself.</p>
 
 ```
 <div class="mood-grid">
@@ -762,9 +762,9 @@ Every SSN event is grounded in emotion-focused coping theory and evidence-based 
 <div class="event-card reveal">
 <div class="event-banner"></div>
 <div class="event-body">
-<div class="event-date-chip">📅 TBD · Fall 2026</div>
+<div class="event-date-chip">📅 TBD | Fall 2026</div>
 <div class="event-title">Wellness Walk & Debrief</div>
-<div class="event-desc">A guided 30-minute walk on campus followed by an informal group debrief — share what's on your mind, reset your nervous system, and connect with peers who get it.</div>
+<div class="event-desc">A guided 30-minute walk on campus followed by an informal group debrief, share what's on your mind, reset your nervous system, and connect with peers who get it.</div>
 <div class="event-meta">
 <span>📍 York University, Keele Campus</span>
 <span>⏱ ~60 min</span>
@@ -776,7 +776,7 @@ Every SSN event is grounded in emotion-focused coping theory and evidence-based 
 <div class="event-card reveal reveal-delay-1">
 <div class="event-banner teal"></div>
 <div class="event-body">
-<div class="event-date-chip">📅 TBD · Fall 2026</div>
+<div class="event-date-chip">📅 TBD | Fall 2026</div>
 <div class="event-title">Reflective Practice Session</div>
 <div class="event-desc">A facilitated peer reflection exercise designed to help you process clinical experiences, name your emotions, and leave feeling more grounded than when you arrived.</div>
 <div class="event-meta">
@@ -790,8 +790,8 @@ Every SSN event is grounded in emotion-focused coping theory and evidence-based 
 <div class="event-card reveal reveal-delay-2">
 <div class="event-banner sand"></div>
 <div class="event-body">
-<div class="event-date-chip">📅 TBD · Fall 2026</div>
-<div class="event-title">Community Social — Meet SSN</div>
+<div class="event-date-chip">📅 TBD | Fall 2026</div>
+<div class="event-title">Community Social, Meet SSN</div>
 <div class="event-desc">A relaxed get-together for nursing students to meet the SSN team, learn about upcoming programming, and connect with peers in a low-pressure, welcoming environment.</div>
 <div class="event-meta">
 <span>📍 York University</span>
@@ -818,7 +818,7 @@ Every SSN event is grounded in emotion-focused coping theory and evidence-based 
 <div class="section-label">Support & Tools</div>
 <div class="divider"></div>
 <h2 class="section-title">Resources for your <em>well-being</em></h2>
-<p class="section-body">Free, vetted, and relevant to nursing students — available any time you need them.</p>
+<p class="section-body">Free, vetted, and relevant to nursing students, available any time you need them.</p>
 </div>
 <div class="res-grid">
 
@@ -828,13 +828,13 @@ Every SSN event is grounded in emotion-focused coping theory and evidence-based 
 <div class="res-icon ri-crisis">🆘</div>
 <div class="res-title">Crisis Lines & Hotlines</div>
 </div>
-<p class="res-body">If you or someone you know is in distress, help is available 24/7. Please reach out — you don't have to face this alone.</p>
+<p class="res-body">If you or someone you know is in distress, help is available 24/7. Please reach out, you don't have to face this alone.</p>
 <ul class="res-list">
-<li><a href="tel:988">9-8-8 Suicide Crisis Helpline</a> — Call or text, Canada-wide, 24/7</li>
-<li><a href="tel:18552423310">Hope for Wellness Help Line</a> — 1-855-242-3310, Indigenous peoples</li>
-<li><a href="https://good2talk.ca" target="_blank">Good2Talk</a> — 1-866-925-5454, post-secondary students</li>
-<li><a href="tel:4164082222">Distress Centres of Greater Toronto</a> — 416-408-4357</li>
-<li><a href="https://www.crisistextline.org" target="_blank">Crisis Text Line</a> — Text HOME to 686868</li>
+<li><a href="tel:988">9-8-8 Suicide Crisis Helpline</a>, Call or text, Canada-wide, 24/7</li>
+<li><a href="tel:18552423310">Hope for Wellness Help Line</a>, 1-855-242-3310, Indigenous peoples</li>
+<li><a href="https://good2talk.ca" target="_blank">Good2Talk</a>, 1-866-925-5454, post-secondary students</li>
+<li><a href="tel:4164082222">Distress Centres of Greater Toronto</a>, 416-408-4357</li>
+<li><a href="https://www.crisistextline.org" target="_blank">Crisis Text Line</a>, Text HOME to 686868</li>
 </ul>
 </div>
 
@@ -843,13 +843,13 @@ Every SSN event is grounded in emotion-focused coping theory and evidence-based 
 <div class="res-icon ri-self">🌱</div>
 <div class="res-title">Stress & Burnout Self-Care</div>
 </div>
-<p class="res-body">Evidence-informed strategies built around the specific stressors of nursing training — small, sustainable practices.</p>
+<p class="res-body">Evidence-informed strategies built around the specific stressors of nursing training, small, sustainable practices.</p>
 <ul class="res-list">
-<li>Schedule rest the same way you schedule class — as a non-negotiable block</li>
+<li>Schedule rest the same way you schedule class, as a non-negotiable block</li>
 <li>After a hard clinical shift, debrief with a peer before going home alone</li>
 <li>5-min journaling: what happened today + one thing you did well</li>
 <li>Notice early burnout signs: detachment, cynicism, reduced empathy, exhaustion</li>
-<li>Use the 5-4-3-2-1 grounding tool — see below ↓</li>
+<li>Use the 5-4-3-2-1 grounding tool, see below ↓</li>
 </ul>
 </div>
 
@@ -860,10 +860,10 @@ Every SSN event is grounded in emotion-focused coping theory and evidence-based 
 </div>
 <p class="res-body">Emotion-focused coping tools to help regulate your stress response. All free or low-cost.</p>
 <ul class="res-list">
-<li><a href="https://insighttimer.com" target="_blank">Insight Timer</a> — Free meditations, sleep & breathwork</li>
-<li><a href="https://www.headspace.com/students" target="_blank">Headspace for Students</a> — Discounted mindfulness app</li>
-<li><a href="https://www.youtube.com/@YogaWithAdriene" target="_blank">Yoga with Adriene (YouTube)</a> — Free movement & relaxation</li>
-<li><a href="https://www.calm.com" target="_blank">Calm</a> — Sleep stories, breathing, meditation</li>
+<li><a href="https://insighttimer.com" target="_blank">Insight Timer</a>, Free meditations, sleep & breathwork</li>
+<li><a href="https://www.headspace.com/students" target="_blank">Headspace for Students</a>, Discounted mindfulness app</li>
+<li><a href="https://www.youtube.com/@YogaWithAdriene" target="_blank">Yoga with Adriene (YouTube)</a>, Free movement & relaxation</li>
+<li><a href="https://www.calm.com" target="_blank">Calm</a>, Sleep stories, breathing, meditation</li>
 <li>Try the interactive breathing exercise below ↓</li>
 </ul>
 </div>
@@ -873,13 +873,13 @@ Every SSN event is grounded in emotion-focused coping theory and evidence-based 
 <div class="res-icon ri-york">🏫</div>
 <div class="res-title">York University Resources</div>
 </div>
-<p class="res-body">York's on-campus and virtual supports — free and available to all registered students.</p>
+<p class="res-body">York's on-campus and virtual supports, free and available to all registered students.</p>
 <ul class="res-list">
-<li><a href="https://counselling.students.yorku.ca" target="_blank">York Counselling & Disability Services</a> — Free counselling</li>
-<li><a href="https://mywell.yorku.ca" target="_blank">MyWell-Being Portal</a> — York's student wellness hub</li>
-<li><a href="https://students.yorku.ca/mental-health" target="_blank">Student Mental Health</a> — Groups, workshops & resources</li>
-<li><a href="https://wellness.students.yorku.ca/wellness-centres/" target="_blank">Wellness Centres</a> — Drop-in at Keele & Glendon</li>
-<li><strong>YU-START Warmline:</strong> 416-736-5297 — Peer support for York students</li>
+<li><a href="https://counselling.students.yorku.ca" target="_blank">York Counselling & Disability Services</a>, Free counselling</li>
+<li><a href="https://mywell.yorku.ca" target="_blank">MyWell-Being Portal</a>, York's student wellness hub</li>
+<li><a href="https://students.yorku.ca/mental-health" target="_blank">Student Mental Health</a>, Groups, workshops & resources</li>
+<li><a href="https://wellness.students.yorku.ca/wellness-centres/" target="_blank">Wellness Centres</a>, Drop-in at Keele & Glendon</li>
+<li><strong>YU-START Warmline:</strong> 416-736-5297, Peer support for York students</li>
 </ul>
 </div>
 
@@ -902,17 +902,17 @@ This evidence-based technique anchors you to the present moment when anxiety or 
 </p>
 </div>
 <div class="gs-steps reveal">
-<button class="gs-btn active" onclick="showStep(this,5,'👀','See','Look around and slowly name 5 things you can see right now. Notice colour, shape, texture, light. Take your time with each one.')">5 · See</button>
-<button class="gs-btn" onclick="showStep(this,4,'✋','Feel','Notice 4 things you can physically feel — your feet on the floor, the air on your skin, your weight in your chair, fabric against your hands.')">4 · Feel</button>
-<button class="gs-btn" onclick="showStep(this,3,'👂','Hear','Close your eyes if comfortable. Listen for 3 distinct sounds, near and far. Name each one. Let the sounds simply exist without judgment.')">3 · Hear</button>
-<button class="gs-btn" onclick="showStep(this,2,'👃','Smell','Name 2 things you can smell right now. If you can\'t identify distinct smells, take one slow breath through your nose and notice whatever is there.')">2 · Smell</button>
-<button class="gs-btn" onclick="showStep(this,1,'👅','Taste','Notice 1 thing you can taste. Take a slow breath. Feel the inside of your mouth. You are here. Present. Grounded.')">1 · Taste</button>
+<button class="gs-btn active" onclick="showStep(this,5,'👀','See','Look around and slowly name 5 things you can see right now. Notice colour, shape, texture, light. Take your time with each one.')">5 | See</button>
+<button class="gs-btn" onclick="showStep(this,4,'✋','Feel','Notice 4 things you can physically feel, your feet on the floor, the air on your skin, your weight in your chair, fabric against your hands.')">4 | Feel</button>
+<button class="gs-btn" onclick="showStep(this,3,'👂','Hear','Close your eyes if comfortable. Listen for 3 distinct sounds, near and far. Name each one. Let the sounds simply exist without judgment.')">3 | Hear</button>
+<button class="gs-btn" onclick="showStep(this,2,'👃','Smell','Name 2 things you can smell right now. If you can\'t identify distinct smells, take one slow breath through your nose and notice whatever is there.')">2 | Smell</button>
+<button class="gs-btn" onclick="showStep(this,1,'👅','Taste','Notice 1 thing you can taste. Take a slow breath. Feel the inside of your mouth. You are here. Present. Grounded.')">1 | Taste</button>
 </div>
 <div class="gs-display reveal">
 <div class="gs-number" id="gsNum">5</div>
 <div class="gs-sense" id="gsSense">👀 Things you can <strong>See</strong></div>
 <div class="gs-instruction" id="gsInstr">Look around and slowly name 5 things you can see right now. Notice colour, shape, texture, light. Take your time with each one.</div>
-<div class="gs-prompt">No rush — breathe slowly as you go</div>
+<div class="gs-prompt">No rush, breathe slowly as you go</div>
 </div>
 </div>
 </section>
@@ -942,8 +942,7 @@ This evidence-based technique anchors you to the present moment when anxiety or 
 <div class="breath-outer" id="breathOuter">
 <div class="breath-glow" id="breathGlow"></div>
 <div class="breath-inner" id="breathInner">
-<span class="breath-num" id="breathNum">—</span>
-<span class="breath-sub" id="breathSub">start</span>
+<span class="breath-num" id="breathNum">-</span><span class="breath-sub" id="breathSub">start</span>
 </div>
 </div>
 </div>
@@ -969,51 +968,51 @@ This evidence-based technique anchors you to the present moment when anxiety or 
 <p class="section-body">Tap any card to learn more about a team member.</p>
 </div>
 <div class="team-grid">
-<div class="team-card reveal" onclick="openModal('RR','Dr. Ruth Robbio','Faculty Supervisor','PhD RN CCNE · York University','rrobbio@yorku.ca','av1','Dr. Robbio is a faculty member in the School of Nursing, Faculty of Health at York University. As supervising researcher for Safe Space Nurses, she provides methodological guidance and ensures the study meets rigorous ethical and scientific standards. Her expertise in nursing education and community health informs SSN\'s evidence-based intervention design.')">
+<div class="team-card reveal" onclick="openModal('RR','Dr. Ruth Robbio','Faculty Supervisor','PhD RN CCNE | York University','rrobbio@yorku.ca','av1','Dr. Robbio is a faculty member in the School of Nursing, Faculty of Health at York University. As supervising researcher for Safe Space Nurses, she provides methodological guidance and ensures the study meets rigorous ethical and scientific standards. Her expertise in nursing education and community health informs SSN\'s evidence-based intervention design.')">
 <div class="team-avatar av1">RR</div>
 <div class="t-name">Dr. Ruth Robbio</div>
 <div class="t-role">Faculty Supervisor</div>
-<div class="t-affil">PhD RN CCNE · York University</div>
+<div class="t-affil">PhD RN CCNE | York University</div>
 <a class="t-email" href="mailto:rrobbio@yorku.ca" onclick="event.stopPropagation()">rrobbio@yorku.ca</a>
 </div>
-<div class="team-card reveal reveal-delay-1" onclick="openModal('ZM','Zahra Mujadidi','Co-Investigator','BScN · School of Nursing, York University','zmujadid@my.yorku.ca','av2','Zahra is a BScN student at York University and a co-founder of Safe Space Nurses. She leads research coordination and event planning, and is passionate about building community and reducing stigma around mental health in nursing education.')">
+<div class="team-card reveal reveal-delay-1" onclick="openModal('ZM','Zahra Mujadidi','Co-Investigator','BScN | School of Nursing, York University','zmujadid@my.yorku.ca','av2','Zahra is a BScN student at York University and a co-founder of Safe Space Nurses. She leads research coordination and event planning, and is passionate about building community and reducing stigma around mental health in nursing education.')">
 <div class="team-avatar av2">ZM</div>
 <div class="t-name">Zahra Mujadidi</div>
 <div class="t-role">Co-Investigator</div>
-<div class="t-affil">BScN · School of Nursing, York University</div>
+<div class="t-affil">BScN | School of Nursing, York University</div>
 <a class="t-email" href="mailto:zmujadid@my.yorku.ca" onclick="event.stopPropagation()">zmujadid@my.yorku.ca</a>
 </div>
-<div class="team-card reveal reveal-delay-2" onclick="openModal('GR','Giada Romano','Co-Investigator','BScN · School of Nursing, York University','gromano1@my.yorku.ca','av3','Giada is a BScN student and co-investigator contributing to event facilitation, participant engagement, and the design of SSN\'s evidence-based wellness programming.')">
+<div class="team-card reveal reveal-delay-2" onclick="openModal('GR','Giada Romano','Co-Investigator','BScN | School of Nursing, York University','gromano1@my.yorku.ca','av3','Giada is a BScN student and co-investigator contributing to event facilitation, participant engagement, and the design of SSN\'s evidence-based wellness programming.')">
 <div class="team-avatar av3">GR</div>
 <div class="t-name">Giada Romano</div>
 <div class="t-role">Co-Investigator</div>
-<div class="t-affil">BScN · School of Nursing, York University</div>
+<div class="t-affil">BScN | School of Nursing, York University</div>
 <a class="t-email" href="mailto:gromano1@my.yorku.ca" onclick="event.stopPropagation()">gromano1@my.yorku.ca</a>
 </div>
-<div class="team-card reveal reveal-delay-1" onclick="openModal('AL','Agnes Li','Co-Investigator','BScN · School of Nursing, York University','agnesli@my.yorku.ca','av4','Agnes (Chuqiao) is a BScN student contributing to study design, data collection logistics, and community outreach for Safe Space Nurses.')">
+<div class="team-card reveal reveal-delay-1" onclick="openModal('AL','Agnes Li','Co-Investigator','BScN | School of Nursing, York University','agnesli@my.yorku.ca','av4','Agnes (Chuqiao) is a BScN student contributing to study design, data collection logistics, and community outreach for Safe Space Nurses.')">
 <div class="team-avatar av4">AL</div>
 <div class="t-name">Agnes Li</div>
 <div class="t-role">Co-Investigator</div>
-<div class="t-affil">BScN · School of Nursing, York University</div>
+<div class="t-affil">BScN | School of Nursing, York University</div>
 <a class="t-email" href="mailto:agnesli@my.yorku.ca" onclick="event.stopPropagation()">agnesli@my.yorku.ca</a>
 </div>
-<div class="team-card reveal reveal-delay-2" onclick="openModal('KS','Kiki Su','Co-Investigator','BScN · School of Nursing, York University','kiks125@my.yorku.ca','av5','Kiki (Yong Qi) is a BScN student supporting SSN\'s event coordination and peer engagement, dedicated to creating welcoming, stigma-free spaces for nursing students to connect.')">
+<div class="team-card reveal reveal-delay-2" onclick="openModal('KS','Kiki Su','Co-Investigator','BScN | School of Nursing, York University','kiks125@my.yorku.ca','av5','Kiki (Yong Qi) is a BScN student supporting SSN\'s event coordination and peer engagement, dedicated to creating welcoming, stigma-free spaces for nursing students to connect.')">
 <div class="team-avatar av5">KS</div>
 <div class="t-name">Kiki Su</div>
 <div class="t-role">Co-Investigator</div>
-<div class="t-affil">BScN · School of Nursing, York University</div>
+<div class="t-affil">BScN | School of Nursing, York University</div>
 <a class="t-email" href="mailto:kiks125@my.yorku.ca" onclick="event.stopPropagation()">kiks125@my.yorku.ca</a>
 </div>
-<div class="team-card reveal reveal-delay-3" onclick="openModal('RB','Riya Bhatia','Co-Investigator','BScN · School of Nursing, York University','riyab@my.yorku.ca','av6','Riya (Harmann) is a BScN student contributing to participant recruitment, focus group facilitation, and the dissemination of SSN\'s research findings.')">
+<div class="team-card reveal reveal-delay-3" onclick="openModal('RB','Riya Bhatia','Co-Investigator','BScN | School of Nursing, York University','riyab@my.yorku.ca','av6','Riya (Harmann) is a BScN student contributing to participant recruitment, focus group facilitation, and the dissemination of SSN\'s research findings.')">
 <div class="team-avatar av6">RB</div>
 <div class="t-name">Riya Bhatia</div>
 <div class="t-role">Co-Investigator</div>
-<div class="t-affil">BScN · School of Nursing, York University</div>
+<div class="t-affil">BScN | School of Nursing, York University</div>
 <a class="t-email" href="mailto:riyab@my.yorku.ca" onclick="event.stopPropagation()">riyab@my.yorku.ca</a>
 </div>
 </div>
 <div class="team-note reveal">
-📋 <strong>Research Ethics:</strong> This study is pending ethics review and approval by the Human Participants Review Sub-Committee (HPRC), York University's Ethics Review Board, conforming to Canadian Tri-Council Research Ethics guidelines. Questions about your rights as a participant? Contact <a href="mailto:ore@yorku.ca">ore@yorku.ca</a>
+📋 <strong>Research Ethics:</strong> This study is pending ethics review and approval by the York University's Ethics Review Board. Questions about your rights as a participant? Contact <a href="mailto:ore@yorku.ca">ore@yorku.ca</a>
 </div>
 </div>
 </section>
@@ -1040,7 +1039,7 @@ This evidence-based technique anchors you to the present moment when anxiety or 
 <div class="divider" style="margin:0 auto 1.5rem"></div>
 <h2 class="section-title">We're <em>here</em> for you</h2>
 <p class="section-body" style="margin:0 auto">
-Have a question about events, the research, or just want to connect? Reach out — we'd love to hear from you.
+Have a question about events, the research, or just want to connect? Reach out, we'd love to hear from you.
 </p>
 <div class="contact-grid">
 <div class="contact-card">
@@ -1069,26 +1068,26 @@ This site is a supplementary peer resource and does not replace professional men
 <!-- FOOTER -->
 
 <footer>
-<p>© 2025–2026 Safe Space Nurses · School of Nursing, York University</p>
+<p>© 2025-2026 Safe Space Nurses | School of Nursing, York University</p>
 <p>Made with <span class="heart">♡</span> by nursing students, for nursing students</p>
-<p style="margin-top:.3rem"><a href="mailto:zmujadid@my.yorku.ca">Contact</a> · <a href="mailto:ore@yorku.ca">Research Ethics</a> · <a href="https://counselling.students.yorku.ca" target="_blank">York Counselling</a> · <a href="tel:988">9-8-8 Crisis Line</a></p>
+<p style="margin-top:.3rem"><a href="mailto:zmujadid@my.yorku.ca">Contact</a> | <a href="mailto:ore@yorku.ca">Research Ethics</a> | <a href="https://counselling.students.yorku.ca" target="_blank">York Counselling</a> | <a href="tel:988">9-8-8 Crisis Line</a></p>
 </footer>
 
 <button id="btt" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
 <script>
-// ── TIPS ────────────────────────────────────────────────
+// -- TIPS ------------------------------------------------
 const tips=[
-{icon:'💛',text:'After a difficult clinical shift, reach out to one peer before going home alone. Shared processing reduces cortisol more effectively than isolation.',meta:'Evidence-based · Peer connection'},
-{icon:'🌿',text:'Schedule rest the same way you schedule class — as a non-negotiable block. Your nervous system cannot distinguish between good stress and bad stress.',meta:'Evidence-based · Burnout prevention'},
-{icon:'🧠',text:'When you notice early burnout signs — detachment, cynicism, reduced empathy — treat them as important clinical data, not character flaws. They are signals worth heeding.',meta:'Burnout awareness · Self-compassion'},
-{icon:'✍️',text:'Five-minute journaling prompt: What was one hard thing today, and what is one thing I did well? This builds self-efficacy and supports emotional processing simultaneously.',meta:'Reflective practice · Stress regulation'},
-{icon:'😴',text:'Even a 20-minute rest between clinical and studying can restore memory consolidation and significantly reduce perceived stress. Rest is not laziness — it is smart.',meta:'Sleep science · Academic performance'},
-{icon:'🫁',text:'The physiological sigh — two short inhales through the nose followed by one long exhale — is one of the fastest evidence-based ways to reduce an acute stress response.',meta:'Neuroscience · Breathwork'},
-{icon:'🤝',text:'Belonging is protective. Research shows nursing students who feel connected to their cohort are significantly less vulnerable to burnout. SSN events are designed exactly for this.',meta:'SSN Research · Sense of belonging'},
-{icon:'🌸',text:'Emotion-focused coping — addressing how you feel about a stressor rather than solving the stressor itself — is especially effective when demands are structural and unchangeable.',meta:'Coping theory · Evidence-based'},
-{icon:'☀️',text:'You were not designed to handle nursing training alone. Using resources and leaning on peers is not weakness — it is effective self-regulation.',meta:'Peer support · Destigmatization'},
-{icon:'💬',text:'The most important source of stress support for nursing students is, consistently, their nursing peers. Not counsellors, not faculty — peers who share the same experience.',meta:'Lavoie-Tremblay et al., 2022 · Peer support'},
+{icon:'💛',text:'After a difficult clinical shift, reach out to one peer before going home alone. Shared processing reduces cortisol more effectively than isolation.',meta:'Evidence-based | Peer connection'},
+{icon:'🌿',text:'Schedule rest the same way you schedule class, as a non-negotiable block. Your nervous system cannot distinguish between good stress and bad stress.',meta:'Evidence-based | Burnout prevention'},
+{icon:'🧠',text:'When you notice early burnout signs, detachment, cynicism, reduced empathy, treat them as important clinical data, not character flaws. They are signals worth heeding.',meta:'Burnout awareness | Self-compassion'},
+{icon:'✍️',text:'Five-minute journaling prompt: What was one hard thing today, and what is one thing I did well? This builds self-efficacy and supports emotional processing simultaneously.',meta:'Reflective practice | Stress regulation'},
+{icon:'😴',text:'Even a 20-minute rest between clinical and studying can restore memory consolidation and significantly reduce perceived stress. Rest is not laziness, it is smart.',meta:'Sleep science | Academic performance'},
+{icon:'🫁',text:'The physiological sigh, two short inhales through the nose followed by one long exhale, is one of the fastest evidence-based ways to reduce an acute stress response.',meta:'Neuroscience | Breathwork'},
+{icon:'🤝',text:'Belonging is protective. Research shows nursing students who feel connected to their cohort are significantly less vulnerable to burnout. SSN events are designed exactly for this.',meta:'SSN Research | Sense of belonging'},
+{icon:'🌸',text:'Emotion-focused coping, addressing how you feel about a stressor rather than solving the stressor itself, is especially effective when demands are structural and unchangeable.',meta:'Coping theory | Evidence-based'},
+{icon:'☀️',text:'You were not designed to handle nursing training alone. Using resources and leaning on peers is not weakness, it is effective self-regulation.',meta:'Peer support | Destigmatization'},
+{icon:'💬',text:'The most important source of stress support for nursing students is, consistently, their nursing peers. Not counsellors, not faculty, peers who share the same experience.',meta:'Lavoie-Tremblay et al., 2022 | Peer support'},
 ];
 let tipIdx=Math.floor(Math.random()*tips.length);
 function showTip(i){
@@ -1105,14 +1104,14 @@ txt.style.opacity='1';
 function nextTip(){tipIdx++;showTip(tipIdx)}
 showTip(tipIdx);
 
-// ── MOOD CHECK-IN ────────────────────────────────────────
+// -- MOOD CHECK-IN ----------------------------------------
 const moods={
-thriving:{title:'You\'re thriving 🌟',body:'That\'s worth acknowledging. Nursing training is genuinely hard, and feeling good is something to celebrate. Consider what\'s contributing to this state and how to protect these conditions.',tips:['Share your energy with a peer who might need it today','Reflect on what\'s working — these insights are worth writing down','Use this state to tackle something you\'ve been putting off']},
-okay:{title:'You\'re doing okay 🌤️',body:'Okay is a real and valid place to be. You\'re managing the demands and showing up — that takes more strength than it sounds. A little intentional care can help sustain this.',tips:['Take a short walk between study blocks to maintain your baseline','Check in with one friend today — connection sustains resilience','Try the breathing exercise below to keep your nervous system regulated']},
-stressed:{title:'You\'re feeling stressed 😤',body:'Stress is a signal, not a verdict. Your nervous system is responding to real demands. The goal isn\'t to eliminate stress — it\'s to build your capacity to move through it. You\'re not alone in this.',tips:['Try 4 cycles of box breathing now — see the exercise below ↓','Name the specific stressor out loud or in writing — vague stress feels worse','Reach out to one peer today, even with a quick message']},
-overwhelmed:{title:'You\'re feeling overwhelmed 🌊',body:'Overwhelm usually means your coping resources feel smaller than the current demand. That\'s a real mismatch — not a personal failure. Let\'s bring the demand down to a size you can work with.',tips:['Write down everything in your head right now — externalizing reduces cognitive load','Pick one small thing to do, not the most important thing — momentum helps','Use the 5-4-3-2-1 grounding tool below to anchor yourself to this moment']},
-exhausted:{title:'You\'re exhausted 😮‍💨',body:'Exhaustion in nursing training is real and common — and it deserves care, not willpower. Your body and mind are asking for something. Please take this seriously. You cannot pour from an empty cup.',tips:['Protect sleep tonight as your most important intervention today','York Counselling is free and confidential — consider booking at counselling.students.yorku.ca','Even 10 minutes of stillness — no phone, no studying — can help restore capacity']},
-disconnected:{title:'You\'re feeling disconnected 🫧',body:'Feeling like you\'re going through the motions, or can\'t quite access your sense of purpose — this is common in nursing training and often signals a belonging gap. You are not invisible here.',tips:['Come to the next SSN event — community contact has been shown to shift disconnection','Reach out to one person from your cohort today, even briefly','Consider calling the YU-START Warmline: 416-736-5297 — peer support, free and confidential']},
+thriving:{title:'You\'re thriving 🌟',body:'That\'s worth acknowledging. Nursing training is genuinely hard, and feeling good is something to celebrate. Consider what\'s contributing to this state and how to protect these conditions.',tips:['Share your energy with a peer who might need it today','Reflect on what\'s working, these insights are worth writing down','Use this state to tackle something you\'ve been putting off']},
+okay:{title:'You\'re doing okay 🌤️',body:'Okay is a real and valid place to be. You\'re managing the demands and showing up, that takes more strength than it sounds. A little intentional care can help sustain this.',tips:['Take a short walk between study blocks to maintain your baseline','Check in with one friend today, connection sustains resilience','Try the breathing exercise below to keep your nervous system regulated']},
+stressed:{title:'You\'re feeling stressed 😤',body:'Stress is a signal, not a verdict. Your nervous system is responding to real demands. The goal isn\'t to eliminate stress, it\'s to build your capacity to move through it. You\'re not alone in this.',tips:['Try 4 cycles of box breathing now, see the exercise below ↓','Name the specific stressor out loud or in writing, vague stress feels worse','Reach out to one peer today, even with a quick message']},
+overwhelmed:{title:'You\'re feeling overwhelmed 🌊',body:'Overwhelm usually means your coping resources feel smaller than the current demand. That\'s a real mismatch, not a personal failure. Let\'s bring the demand down to a size you can work with.',tips:['Write down everything in your head right now, externalizing reduces cognitive load','Pick one small thing to do, not the most important thing, momentum helps','Use the 5-4-3-2-1 grounding tool below to anchor yourself to this moment']},
+exhausted:{title:'You\'re exhausted 😮‍💨',body:'Exhaustion in nursing training is real and common, and it deserves care, not willpower. Your body and mind are asking for something. Please take this seriously. You cannot pour from an empty cup.',tips:['Protect sleep tonight as your most important intervention today','York Counselling is free and confidential, consider booking at counselling.students.yorku.ca','Even 10 minutes of stillness, no phone, no studying, can help restore capacity']},
+disconnected:{title:'You\'re feeling disconnected 🫧',body:'Feeling like you\'re going through the motions, or can\'t quite access your sense of purpose, this is common in nursing training and often signals a belonging gap. You are not invisible here.',tips:['Come to the next SSN event, community contact has been shown to shift disconnection','Reach out to one person from your cohort today, even briefly','Consider calling the YU-START Warmline: 416-736-5297, peer support, free and confidential']},
 };
 function selectMood(btn){
 document.querySelectorAll('.mood-btn').forEach(b=>b.classList.remove('selected'));
@@ -1127,7 +1126,7 @@ void r.offsetWidth;
 r.classList.add('show');
 }
 
-// ── 5-4-3-2-1 GROUNDING ─────────────────────────────────
+// -- 5-4-3-2-1 GROUNDING ---------------------------------
 function showStep(btn,num,emoji,sense,instr){
 document.querySelectorAll('.gs-btn').forEach(b=>b.classList.remove('active'));
 btn.classList.add('active');
@@ -1138,11 +1137,11 @@ document.getElementById('gsSense').innerHTML=`${emoji} Things you can <strong>${
 document.getElementById('gsInstr').textContent=instr;
 }
 
-// ── BREATHING ────────────────────────────────────────────
+// -- BREATHING --------------------------------------------
 const breathTypes={
 box:{name:'Box Breathing',phases:['Inhale','Hold','Exhale','Hold'],times:[4,4,4,4],hints:['Breathe in through your nose','Hold gently','Breathe out slowly','Hold and rest']},
-'478':{name:'4-7-8 Breathing',phases:['Inhale','Hold','Exhale','—'],times:[4,7,8,1],hints:['Breathe in through your nose','Hold your breath','Exhale completely through mouth','Rest']},
-sigh:{name:'Physiological Sigh',phases:['Inhale 1','Inhale 2','Exhale','Pause'],times:[2,1,8,2],hints:['First inhale — fill lungs','Second short inhale — top up','Long slow exhale through mouth','Rest and repeat']},
+'478':{name:'4-7-8 Breathing',phases:['Inhale','Hold','Exhale','-'],times:[4,7,8,1],hints:['Breathe in through your nose','Hold your breath','Exhale completely through mouth','Rest']},
+sigh:{name:'Physiological Sigh',phases:['Inhale 1','Inhale 2','Exhale','Pause'],times:[2,1,8,2],hints:['First inhale, fill lungs','Second short inhale, top up','Long slow exhale through mouth','Rest and repeat']},
 };
 let currentType='box',running=false,timer=null,phaseIdx=0,countdown=0,cycles=0;
 
@@ -1210,7 +1209,7 @@ phaseIdx=0;countdown=0;cycles=0;
 document.getElementById('breathBtn').textContent='Start Breathing';
 document.getElementById('cycleCount').textContent='0';
 document.getElementById('breathPhase').textContent='Ready when you are';
-document.getElementById('breathNum').textContent='—';
+document.getElementById('breathNum').textContent='-';
 document.getElementById('breathSub').textContent='start';
 document.getElementById('breathHint').textContent='Select a technique above and press Start';
 document.getElementById('breathInner').style.transform='scale(1)';
@@ -1218,7 +1217,7 @@ document.getElementById('breathGlow').style.transform='scale(1)';
 document.getElementById('breathOuter').classList.remove('active-ring');
 }
 
-// ── TEAM MODAL ───────────────────────────────────────────
+// -- TEAM MODAL -------------------------------------------
 function openModal(init,name,role,affil,email,avClass,bio){
 const av=document.getElementById('mAv');
 av.className='modal-av '+avClass;av.textContent=init;
@@ -1237,7 +1236,7 @@ document.body.style.overflow='';
 function handleOverlayClick(e){if(e.target===document.getElementById('teamModal'))closeModal()}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
 
-// ── HAMBURGER ────────────────────────────────────────────
+// -- HAMBURGER --------------------------------------------
 const ham=document.getElementById('hamburger');
 const mob=document.getElementById('mobileMenu');
 ham.addEventListener('click',()=>{
@@ -1252,7 +1251,7 @@ mob.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
 ham.classList.remove('open');mob.classList.remove('open');document.body.style.overflow='';
 }));
 
-// ── SCROLL ───────────────────────────────────────────────
+// -- SCROLL -----------------------------------------------
 const observer=new IntersectionObserver(entries=>{
 entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
 },{threshold:0.1});
